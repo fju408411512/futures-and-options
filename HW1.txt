@@ -13,3 +13,4 @@ end
 using Plots
 scatter(k,v,ylabel = "value", ylims = (0,3))
 scatter!(k,e)
+savefig("C:\\Users\\User\\Desktop\\HW1.png")
