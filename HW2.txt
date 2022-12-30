@@ -1,0 +1,16 @@
+using Statisitcs
+s = [2,50,6]
+f = [6,9,10]
+
+dif_S = S[2:3] - S[1:2]
+dif_F = F[2:3] - F[1:2]
+
+std(dif_S, corrected = flase)
+std(dif_F, corrected = flase)
+
+var(dif_S, corrected = flase)
+var(dif_F, corrected = flase)
+
+using DataFrames, GLM
+df = DataFrame(dif_S,dis_F)
+ols = 1m(@formula(dis_S~dis_F), df)
